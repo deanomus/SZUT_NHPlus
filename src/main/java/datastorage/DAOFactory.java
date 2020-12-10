@@ -1,5 +1,7 @@
 package datastorage;
 
+import java.sql.Connection;
+
 public class DAOFactory {
 
     private static DAOFactory instance;
@@ -21,5 +23,9 @@ public class DAOFactory {
 
     public PatientDAO createPatientDAO() {
         return new PatientDAO(ConnectionBuilder.getConnection());
+    }
+
+    public NurseDAO createNurseDAO() {
+        return new NurseDAO(ConnectionBuilder.getConnection());
     }
 }

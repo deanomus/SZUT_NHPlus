@@ -25,6 +25,7 @@ public class Main extends Application {
         mainWindow();
     }
 
+
     public void mainWindow() {
         try {
             FXMLLoader loader = new FXMLLoader(Main.class.getResource("/MainWindowView.fxml"));
